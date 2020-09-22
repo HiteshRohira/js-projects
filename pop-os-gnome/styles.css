@@ -1,10 +1,62 @@
-img {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: cover;
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.bg {
+	margin: 0;
+	background: url(./img/unleash-blue.webp);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header {
+	background: #26221F;
+	color: #fff;
+	padding: 6px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 700;
+}
+
+header #activities {
+	padding: 0 15px;
+	font-size: 12px;
+}
+
+header #date-time {
+	padding: 0 15px;
+	font-size: 12px;
+}
+
+.bg header #icons {
+	display: block;
+	padding: 0 10px;
+	height: 12px;
+	align-content: flex-end;
+}
+
+.bg header #icons img {
+	padding: 0 2px;
+	width: 14px;
+}
+
+.bg #dash {
+	width: 74px;
+	height: 445px;
+	background-color: #26221f;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 220px;
+	border-radius: 0 6px 6px 0;
+}
+
+.bg #dash img {
+	width: 54px;
+	padding: 10px;
 }
