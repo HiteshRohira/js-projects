@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="https://www.flaticon.com/svg/static/icons/svg/3079/3079026.svg" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+	<script src="https://kit.fontawesome.com/befd53af99.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./style.css">
+	<title>Planner</title>
+</head>
+<body>
+	<div class="container is-max-desktop">
+
+		<div class="columns is-mobile is-centered mt-5">
+			<div class="column is-half">
+
+				<!-- Left arrow -->
+				<!-- <button class="button is-link is-medium is-light" id="left-btn">
+					<span class="icon">
+						<i class="fas fa-arrow-left"></i>
+					</span>
+				</button> -->
+
+				<!-- Month Selector -->
+				<div class="select is-rounded is-large mx-5">
+					<select id="month-selector">
+						<option value="0">January</option>
+						<option value="1">February</option>
+						<option value="2">March</option>
+						<option value="3">April</option>
+						<option value="4">May</option>
+						<option value="5">June</option>
+						<option value="6">July</option>
+						<option value="7">August</option>
+						<option value="8">September</option>
+						<option value="9">October</option>
+						<option value="10">November</option>
+						<option value="11">December</option>
+					</select>
+				</div>
+				
+				<!-- Year Selector -->
+				<div class="select is-rounded is-large">
+					<select id="year-selector">
+						<option value="2016">2016</option>
+						<option value="2017">2017</option>
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+						<option value="2021">2021</option>
+						<option value="2022">2022</option>
+						<option value="2023">2023</option>
+						<option value="2024">2024</option>
+						<option value="2025">2025</option>
+						<option value="2026">2026</option>
+						<option value="2027">2027</option>
+						<option value="2028">2028</option>
+						<option value="2029">2029</option>
+						<option value="2030">2030</option>
+					</select> <!-- Figure out how to add years on demand -->
+				</div>
+
+				<!-- Right arrow -->
+				<!-- <button class="button is-link is-medium is-light is-pulled-right" id="right-btn">
+					<span class="icon">
+						<i class="fas fa-arrow-right"></i>
+					</span>
+				</button> -->
+
+			</div>
+		</div>
+
+		<table class="table is-bordered is-fullwidth my-6">
+			<tbody>
+				<tr>
+					<th class="has-text-centered is-size-3">Sun</th>
+					<th class="has-text-centered is-size-3">Mon</th>
+					<th class="has-text-centered is-size-3">Tue</th>
+					<th class="has-text-centered is-size-3">Wed</th>
+					<th class="has-text-centered is-size-3">Thu</th>
+					<th class="has-text-centered is-size-3">Fri</th>
+					<th class="has-text-centered is-size-3">Sat</th>
+				</tr>
+			</tbody>
+		</table>
+
+	</div> <!-- Main Container ends here -->
+
+	<!-- Modal -->
+	<div class="modal">
+		<div class="modal-background"></div>
+		<div class="modal-content has-background-white">
+			<div class="modal-container">
+				<div class="date-template-container"></div>
+				<div class="task-list-container">
+					<div class="content"></div>
+				</div>
+				<div class="field is-grouped">
+					<p class="control is-expanded">
+						<input class="input" type="text" placeholder="Write your task here...">
+					</p>
+					<p class="control">
+						<a class="button is-link is-light task-submit">
+							Add Task
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<button class="modal-close is-large" aria-label="close"></button>
+	</div>
+
+
+	
+	
+	<script src="./script.js"></script>
+</body>
+</html>

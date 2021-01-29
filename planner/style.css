@@ -1,0 +1,43 @@
+.modal-content {
+	border-radius: 6px;
+	min-height: 640px;
+}
+
+.modal-container {
+	max-width: 85%;
+	margin: 40px auto;
+}
+
+.task-list-container {
+	/* border: 2px solid hsl(217, 71%, 45%); */
+	border-radius: 8px;
+	height: 320px;
+	width: 100%;
+	margin: 30px auto;
+}
+
+.task-list-container .content ul {
+	list-style: none;
+}
+
+.task-list-container .content ul li {
+	margin: 20px 24px 16px -8px;
+	background-color: hsl(0, 0%, 96%);
+	padding: 2px 0 4px 12px;
+	border-radius: 4px;
+}
+
+.not-found {
+	width: 250px;
+	height: 250px;
+	margin: 10px auto;
+	display: block;
+}
+
+.is-danger {
+	background-color: #ffe9ee !important;
+}
+
+td:hover {
+	background-color: hsl(0, 0%, 86%);
+}
